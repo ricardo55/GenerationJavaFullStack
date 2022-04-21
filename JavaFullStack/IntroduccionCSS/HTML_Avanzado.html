@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario,tablas y anclajes</title>
+    <link rel="stylesheet" href="./assets/css/htmlAvanzado.css">
+</head>
+<body>
+    
+    <!--- Formulario 
+    
+        Nos sirve para enviar datos de un formulario a otro y recopilar informacion 
+        de los usuarios.
+        Cuando trabajamos con botones dentro de un formulario, nosotros debemos usar input
+        del tipo boton. Si trabajamos con botoes fuera de un formulario, debemos usar la eqtiqueta
+        button.
+
+        Atributos importantes:
+
+            -action: es la direccion donde se enviara la informacion del formulario.
+            -method: es el metodo de envio de la informacion del formulario.
+            -enctype: es el tipo de codificacion de la informacion del formulario.
+            -name: es el nombre del formulario.
+            -target: es el nombre de la ventana donde se mostrara la informacion del formulario.
+            -onsubmit: es el evento que se ejecutara al enviar el formulario.
+            -onreset: es el evento que se ejecutara al resetear el formulario.
+            -onchange: es el evento que se ejecutara al cambiar el valor de un campo.
+            -onclick: es el evento que se ejecutara al hacer click en un elemento.
+            -onblur: es el evento que se ejecutara al perder el foco en un elemento.
+            -onfocus: es el evento que se ejecutara al tener el foco en un elemento.
+            -onkeydown: es el evento que se ejecutara al presionar una tecla.
+            -onkeyup: es el evento que se ejecutara al soltar una tecla.
+            -onkeypress: es el evento que se ejecutara al presionar una tecla.
+            -onmouseover: es el evento que se ejecutara al pasar el mouse sobre un elemento.
+            -onmouseout: es el evento que se ejecutara al salir el mouse de un elemento.
+            -onmousemove: es el evento que se ejecutara al mover el mouse sobre un elemento.
+            -onload: es el evento que se ejecutara al cargar la pagina.
+            -onunload: es el evento que se ejecutara al cerrar la pagina.
+            -onresize: es el evento que se ejecutara al redimensionar la pagina.
+            -onbeforeunload: es el evento que se ejecutara antes de cerrar la pagina.
+            -onhashchange: es el evento que se ejecutara al cambiar el hash de la pagina.
+            -onpopstate: es el evento que se ejecutara al cambiar el estado de la pagina.
+            -onpageshow: es el evento que se ejecutara al mostrar la pagina.
+            -onpagehide: es el evento que se ejecutara al ocultar la pagina.
+            -onstorage: es el evento que se ejecutara al cambiar el almacenamiento de la pagina.
+            -onabort: es el evento que se ejecutara al abortar la pagina.
+            
+            
+
+
+
+    -->
+<fieldset>
+    <legend id="legend">Formulario</legend>
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+        <h1>Formulario</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" placeholder="Edad">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <br>
+        <label for="password2">Repetir Password:</label>
+        <input type="password" name="password2" id="password2" placeholder="Repetir Password">
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" value="Fecha">
+        <br>
+        <label for="sino">Si o No:</label>
+        <span>Y</span><input type="checkbox" value="checkbox">
+        <span>N</span><input type="checkbox" value="checkbox2">
+        <br>
+        <label for="sexo">Sexo:</label>
+        <span>M</span><input type="radio" value="radio">
+        <span>F</span><input type="radio" value="radio2">
+        <br>
+        <label for="select">Seleccionar:</label>
+        <input type="color" value="Color">
+        <br>
+        <label for="archivo">Archivos:</label>
+        <input type="file" value="Archivo">
+        <br>
+        <label for="comentario">Comentarios:</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+    </form>
+</fieldset>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: gray;
+}
+
+.cajaFlotante {
+  margin: 40px;
+  margin: 40px 30px 0px 30px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  border-top: solid 0px;
+  border-left: solid 0px;
+  
+}
+
+
+.cabecera {
+    padding: 10px;
+    border-bottom: solid 1px #eeeeee;
+  }
+
+.contenido {
+  padding: 10px;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.botones {
+    padding: 10px;
+    border-top: 2px #eeeeee;
+  }
+
+#botonAceptar {
+    background-color: #058efd;
+    border: 0px;
+    border-radius: 2px;
+    padding: 3px;
+    color: white;
+
+}
+
+#botonCancelar {
+    background-color: #aaaa;
+    border: 0px;
+    border-radius: 2px;
+    padding: 3px;
+    color: white;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html> <!-- Espefica el tipo de documento -->
+<html lang="en"> <!-- Etiqueta del lenguaje -->
+<head> <!-- Define el encabezado de la pagina -->
+    <meta charset="UTF-8"> <!-- Sirve para especificar que el anavegador se adapte al documuento.
+    UTF-8 es el tipo de caracteres mas utilizado(datos de alto nivel) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Sirve para especificar que el navegador se adapta al documento, 
+        IE=Edge es el navegadormas reciente compatible con el documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sirve para escificar el ancho del documento, el tamaño
+    inicial de la pantalla y el zoom, Con esta etiqueta meta se especifica que al ancho del dispositivo y el zoom es 1.0 -->
+    <title>Apuntes HTML</title>
+</head>
+<body>
+    <h1>Este es mi Portafolio</h1> <!-- El tamaño h1 = 2rem o 16px -->
+    <h2>Este es otro titulo</h2> <!-- El tamaño h2 = 1.5rem o 12px -->
+    <h3>Algo</h3> <!-- El tamaño h3 = 1.25rem o 10px -->
+    <h4>algo mas</h4> <!-- El tamaño h4 = 1rem o 8px -->
+    <h5>nose</h5> <!-- El tamaño h5 = 0.875rem o 6px -->
+    <h6>noooooo</h6> <!-- El tamaño h6 = 0.75rem o 4px -->
+
+    <!-- Parrafos -->
+
+    <p align="left" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quisquam, facere voluptatibus odio maiores at eaque veniam, rerum quae ratione 
+    quam repellendus sapiente <em> sint optio adipisci inventore </em>, 
+    minus molestias aspernatur?</p>
+
+    <p align="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quisquam, facere <b> odio maiores at eaque veniam, rerum quae ratione quam </b> repellendus sapiente necessitatibus sint optio adipisci inventore, minus molestias aspernatur?</p>
+
+    <p  align="right" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quisquam, facere voluptatibus odio maiores at eaque veniam, rerum quae ratione 
+    quam repellendus sapiente necessitatibus sint optio adipisci inventore, 
+    minus molestias aspernatur?</p>
+
+    <p  align="justify" color="" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facere voluptatibus odio maiores at eaque veniam, rerum quae ratione quam repellendus sapiente necessitatibus sint optio adipisci inventore, 
+    minus molestias aspernatur?</p>
+
+    <br>
+    <br>
+    <hr>
+
+    <!--
+    Etiquetas para formatear texto: strong, em, u, i, b, blockquote.
+
+    Las etiquetas de texto nos permiten crear texto en negrita, cursiva, subrayado, etc.
+
+    - La etiqueta strong nos permite crear texto en negrita.
+    - La etiqueta em nos permite crear texto en cursiva.
+    - La etiqueta u nos permite crear texto subrayado.
+    - La etiqueta i nos permite crear texto en cursiva.
+    - La etiqueta b nos permite crear texto en negrita.
+    - La etiqueta blockquote nos permite crear un bloque de texto.
+
+    La diferencia entre las etiquetas strong y b es que la etiqueta strong debe utilizarse cuando el texto tiene una fuerte importancia o un sentido de urgencia o seriedad. Las etiquetas b en cambio deben utilizarse para llamar la atencion sobre un tramo de texto sin mayor importancia.
+-->
+
+<p><blockquote> Lorem ipsum dolor <b>sit amet,</b> consectetur adipisicing elit. Repellendus, eveniet totam? <strong>Reprehenderit obcaecati earum deserunt vero ea rerum, nulla possimus suscipit adipisci  laudantium porro veritatis voluptatem <em>voluptate</em> sint doloribus!</strong> Possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse! Iure odit consequuntur minima est blanditiis sit incidunt, doloribus expedita adipisci fuga, rem quasi. <u>Corrupti non molestiae earum autem laboriosam!</u></blockquote></p>
+
+
+<!--
+
+    Etiquetas divisorias y separadores hr y br
+
+    La etiqueta hr nos sirve para dar una separacion entre nuestros parrafos. AL utilizar la etiqueta hr, veremos una linea horizontal que usaremos como separador. No necesita una etiqueta de cierre.
+
+    La etiqueta br nos sirve para dar una separacion entre nuestros parrafos. AL utilizar la etiqueta br, veremos un salto de linea que usaremos como separador. Al igual que la etiqueta hr no necesita una etiqueta de cierre.
+
+-->
+
+<hr>
+<br>
+<br>
+<hr>
+
+    <hr>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+
+    Etiquetas de enlace a una pagina web: a
+
+    Los enlaces nos permiten la navegacion por medio de hipervinculos (links) que realizan una conexion y referencian otros archivos o paginas web dentro de la misma aplicacion o externa a la misma.
+
+    En HTML 5 se pueden definir los enlaces con la etiqueta a que significa "anchor" o ancla. Esta etiqueta tiene varios atributos:
+
+     - href: es el atributo que nos permite definir la ubicacion de la pagina a la que nos vamos a enlazar. El atributo href puede ser una URL o una ubicacion dentro de nuestra carpeta de assets, por ejemplo. Pondremos dentro de las comiilas la direccion de la pgina a la que queremos enlazar.
+     
+     - target: es el atributo que nos permite definir la ventana de destino, que puede ser una nueva ventana o la misma ventana.
+        - _blank: abre una nueva ventana.
+        - _self: abre la misma ventana. Cuando agregamos un enlace, por defecto el atributo es _self.
+
+    Ya que sabemos como hacer referencias a paginas, es imporante conocer las distintas rutas de enlace y sus tipos.
+
+    - Rutas absolutas: Son aquellas que definien la ubicacion completa de un archivo o pagina web, por ejemplo: http://www.google.com.
+
+    - Rutas relativas: Son las que se definen a partir de la posicion en la estructura local de la pagina que lo esta refiriendo,es decir, solo indica el orden de directorios, por ejemplo: /assets/img/perritoplayero.jpg.
+
+-->
+
+    <a href="/assets/566704312_175647642_1024x576.jpg" target="_blank">Enlace a un avion</a>
+
+    <br>
+    <br>
+
+    <a href="https://www.google.com">Enlace a google</a>
+
+    <hr>
+    <br>
+
+    <a href="mailto:ricvb10@gmail.com">Enlace a correo</a>
+
+
+    <hr>
+    <br>
+
+    <!--
+    
+    Algunos otros enlaces que podemos usar:
+    - Enlaces de correo: Se pude vicualar una direccion de correo para que abra el programa de correo predeterminado usando la palabra reservada mailto,  ejemplo: mailto:felipe.maqueda@idr.edu.mx
+
+    - Enlaces de descarga: Dentro del atributo href se puede colocar la direccion de la pagina que se va a descargar y despues el atributo "download" que nos permite definir el nombre del archivo que se descargará.
+
+-->
+
+    <a href="/assets/566704312_175647642_1024x576.jpg" download="">Enlace a descargar avion</a>
+
+    <hr>
+    <br>
+    
+    <img src="/assets/566704312_175647642_1024x576.jpg" alt="Avionnnn" width="250">
+
+    <hr>
+    <br>
+
+    <!--
+    Etiquetas de listas ordenadas, desordenadas y listas de definiciones. (ul, ol, dl)
+
+    Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+    Los tipos de listas que tenemos en HTMl son:
+
+    - Listas ordenadas: Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numerods, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol.
+
+    Los atributos de las listas ordenadas son:
+        - start: es el atributo que nos permite definir el orden inicial de los elementos de la lista. Por defecto el valor es 1.
+        - type: Nos permite indicar el tipo de lista que se va a crear:
+            - decimal: nos permite crear una lista ordenada con numeros enteros.
+            - lower-alpha: nos permite crear una lista ordenada con letras minusculas.
+            - lower-roman: nos permite crear una lista ordenada con numeros romanos en minusculas.	
+            - upper-alpha: nos permite crear una lista ordenada con letras mayusculas.
+            - upper-roman: nos permite crear una lista ordenada con numeros romanos en mayusculas.
+        - reversed: nos permite invertir el orden de los elementos de la lista.
+
+    - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedidiso por una viñeta que puede ser un punto, un cuadrado, etc.
+        - style: nos permite definir el estilo de la lista.
+            - circle: nos permite crear una lista desordenada con viñetas circulares.
+            - disc: nos permite crear una lista desordenada con viñetas de disco.
+            - square: nos permite crear una lista desordenada con viñetas cuadradas.
+    
+    - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+
+-->
+
+<h3>Lista ordenada de perritos (sin atributos)</h3>
+
+<ol>
+    <li>Dálmata</li>
+    <li>Labrador</li>
+    <li>Pitbull</li>
+    <li>Chihuahua</li>
+</ol>
+
+<h3>Lista ordenada de perritos (con atributos)</h3>
+
+<ol type="A" start="6" > <!--Utilizamos un tipo A para listar con letras mayúsculas y con un start en 6, para iniciar desde la sexta letra del alfabeto (F)-->
+    <li>Dálmata</li>
+    <li>Labrador</li>
+    <li>Pitbull</li>
+    <li>Chihuahua</li>
+</ol>
+
+
+<h3>Lista desordenada de gatitos (sin atributos)</h3>
+<ul>
+    <li>Siamés</li>
+    <li>Egipcio</li>
+    <li>Persa</li>
+    <li>Bengali</li>
+</ul>
+
+<h3>Lista desordenada de gatitos (con atributos)</h3>
+<ul type="square">
+    <li>Siamés</li>
+    <li>Egipcio</li>
+    <li>Persa</li>
+    <li>Bengali</li>
+</ul>
+
+<h3>Lista de definiciones</h3>
+
+<dl>
+    <dt>Gato</dt>
+    <dd>Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico, de unos cinco decímetros de largo desde la cabeza hasta el arranque de la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera que planean dominar al mundo</dd>
+    <dt>Perro</dt>
+    <dd>Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño. Es el mejor amigo del hombre</dd>
+</dl>
+
+
+<hr>
+<br>
+
+<!--
+
+    Etiquetas de imagen (img)
+
+    La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+    Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/
+
+    Los atributos de la etiqueta img son:
+
+    - src: es el atributo que nos permite definir la ubicación de la imagen.
+    - alt: es el atributo que nos permite definir una descripción de la imagen.
+    - width: es el atributo que nos permite definir el ancho de la imagen.
+    - height: es el atributo que nos permite definir el alto de la imagen.
+
+-->
+
+<img src="/assets/img/perritoplayero.jpg" alt="Perrito playero" width="200" height="200">
+
+<br>
+<br>
+<br>
+<hr>
+
+<!--
+
+    Etiquetas de divisiones (div y span)
+
+    Las etiquetas div y span no tienen ningun signidicado especial, sólo que la etqueta div se define como un elemento bloque y la etiqueta span es un elemento de linea.
+
+    -div: Este es un bñoque de texto, se utiliza pra agrupar elementos en una sola seccion, es decir, si queremos agrupar una imagen y un texto, debemos utilizar un div.
+ 
+-->
+
+<div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+    <img src="/assets/img/perritoplayero.jpg" alt="Perrito Playero" width="200" height="200">
+    <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+    <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+    <ul>
+        <li> Un elemento de lista centrado </li>
+        <li> Otro elemento de lista centrado </li>
+    </ul>
+    </div>
+
+    <div align="center" style="border: 10px dotted blue;">
+        <h3 >Ejemplo de div y span </h3>
+         <p>
+          Esto es un párrafo dentro de un div,
+           <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+         </p>
+       </div>
+
+       <hr>
+       <br>
+
+   
+    
+</body>
+</html>

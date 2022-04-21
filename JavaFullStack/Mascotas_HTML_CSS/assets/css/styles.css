@@ -1,0 +1,50 @@
+body{
+    /*background-color: #f97605;*/
+    background-color: #6EB0EE;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.gallery{
+  background-color: grey;
+  margin: auto;
+  width: 45%;
+  border: 3px solid pink;
+  padding: 10px;
+}
+.desc{
+  color: Pink;
+  font-size: 25px;
+}
+
+.encabezado{
+    background-color: #EE856E;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.botones{
+    margin-left: 5px;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+  
+}
+
+.face{
+    background-color: #4267B2;
+}
+.twit {
+    background-color: #1DA1F2;
+}
+.github{
+    background-color: #555555;
+}
+
+
+
