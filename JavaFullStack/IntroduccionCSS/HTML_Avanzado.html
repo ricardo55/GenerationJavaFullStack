@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./assets/css/htmlAvanzado.css">
 </head>
 <body>
+
+    <p>Menu: </p><br>
+    <a href="#formulario"><button>formulario</button></a><br>
+    <a href="#primera"><button> Tabla 1 </button></a><br>
+    <a href="#extincion"><button>Animales en peligro</button></a><br>
+    <a href="#maqueta"><button>Maquetado web</button></a><br>
     
     <!--- Formulario 
     
@@ -54,7 +60,7 @@
     -->
 <fieldset>
     <legend id="legend">Formulario</legend>
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+    <form id="formulario" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <h1>Formulario</h1>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
@@ -97,6 +103,140 @@
         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
     </form>
 </fieldset>
+
+<hr>
+<br>
+
+<h1>Temas de las tablas</h1>
+
+<table id="primera">
+
+    <th>Esta es mi tabla</th>
+    <th>Gastos 2020</th>
+    <th>Gastos 2021</th>
+    <th>Gastos 2022</th>
+    <tr></tr>
+
+</table>
+
+
+<!--
+    -cellspacing: es el espacio entre las celdas de la tabla.
+    -cellpadding: es el espacio entre los bordes de las celdas de la tabla.
+    -border: es el tamaño del borde de la tabla.
+    -colspan: es el numero de columnas que se van a repetir.
+    -rowspan: es el numero de filas que se van a repetir.
+-->
+
+<h1>Animales en peligro de extincion</h1>
+<table id="extincion" align="center" cellspacing="2" cellpadding="2" border="5" bgcolor="dddddd">
+    <tr> <!--- Fila 1 --->
+        <td colspan="4" align="center" bgcolor="666666">
+            <font color="#FFFFFF"><strong>Animales en peligro de extinción</strong></font>
+        </td>
+    </tr> <!--Cierre Fila 1-->
+    <tr bgcolor="aaaaaa">
+        <td>Nombre</td>
+        <td align="center">Cabezas</td>
+        <td align="center">Previsión 2010</td>
+        <td align="center">Previsión 2020</td>
+    </tr>
+    <tr>
+        <td>Ballena</td>
+        <td align="center">6000</td>
+        <td align="center">4000</td>
+        <td align="center">1500</td>
+    </tr>
+    <tr>
+        <td>Oso Pardo</td>
+        <td align="center">50</td>
+        <td rowspan="2" colspan="2" align="center" bgcolor="red">0</td>
+    </tr>
+    <tr>
+        <td>Lince</td>
+        <td align="center">10</td>
+    </tr>
+    <tr>
+        <td>Tigre</td>
+        <td align="center">300</td>
+        <td colspan="2" align="center">210</td>
+    </tr>
+</table>
+<br>
+
+<h1>Maquetado de pagina web con una tabla</h1>
+<table id="maqueta" width="100%" border="2" align="center">
+
+    <tr>
+        <td colspan="2" align="center">NavBar</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2" align="center">Texto</td>
+        <td align="center">Imagen 1</td>
+       
+    </tr>
+    <td align="center">Imagen 2</td>
+    <tr>
+        <td colspan="2" align="center">Footer</td>
+    </tr>
+
+</table>
+
+<hr>
+<br>
+
+<h1>Ejercicios Pagina web</h1>
+
+<table width="100%">
+
+    <tr> <!--- Fila 1 --->
+        <td colspan="5" align="center" bgcolor="666666">
+            <font color="#FFFFFF"><strong>Barra Navegacion</strong></font>
+        </td>
+    </tr> <!--Cierre Fila 1-->
+
+    <tr bgcolor="aaaaaa">
+        <td rowspan="3">Texto</td>
+        <td rowspan="3" align="center">Texto 2</td>
+       
+        <td colspan="3" align="center">Texto 3</td>
+        <tr> 
+            <td colspan="3" align="center">Texto 4</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Texto 5</td>
+
+        </tr>
+       
+       
+       
+    </tr>
+    <tr>
+        <td>Imagen</td>
+        <td>Imagen 2</td>
+        <td>Imagen 3</td>
+        <td>Imagen 4</td>
+        <td>Imagen 5</td>
+    </tr>
+
+    <tfoot >
+        <td colspan="3">Footer 1</td>
+        <td colspan="2">Footer 2</td>
+    </tfoot>
+
+
+
+</table>
+<br>
+
+<h1>Periodico</h1>
+
+<table>
+
+
+</table>
+
     
 </body>
 </html>
